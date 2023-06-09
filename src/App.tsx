@@ -1,7 +1,10 @@
 import React from "react";
+import Sidebar from './components/sidebar/Sidebar.jsx';
 
 const App = () => {
-  return (<>Zenkai - React</>)
+  return (<>
+    <Sidebar />
+  </>)
 }
 
 export default App
