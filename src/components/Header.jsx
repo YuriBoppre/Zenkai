@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
-// import { ReactComponent as Zenkai } from "../Assets/dogs.svg";
+// import { ReactComponent as Zenkai } from "../Assets/zenkai.svg";
 //import { UserContext } from "../UserContext";
 
 const Header = () => {

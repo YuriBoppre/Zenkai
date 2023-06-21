@@ -5,13 +5,20 @@ import Button from "../forms/Button";
 import styles from "./LoginForm.module.css";
 import stylesBtn from "../forms/Button.module.css";
 import useForm from "../../Hooks/useForm";
+import { UserContext } from "../../UserContex";
 
 const LoginForm = () => {
     const username = useForm(),
-        password = useForm();
+        password = useForm(),
+        { userLogin } = React.useContext(UserContext);
 
+    //manda para o userLogin para fazer as validações corretas
     function handleSubmit(event) {
         event.preventDefault();
+
+        if (username.validate() && password.validate()) {
+            userLogin(username.value, password.value);
+        }
     }
 
     return (

@@ -4,12 +4,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Login from "./Components/login/Login";
+import { UserStorage } from "./UserContex";
 
 const App = () => {
   return (<>
    <div className="App">
       <BrowserRouter>
-        {/* <UserStorage> */}
+        <UserStorage>
           <Header />
           <main className="AppBody">
             <Routes>
@@ -18,7 +19,7 @@ const App = () => {
             </Routes>
           </main>
           <Footer />
-        {/* </UserStorage> */}
+        </UserStorage>
       </BrowserRouter>
     </div>
   </>)

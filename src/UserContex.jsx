@@ -6,7 +6,7 @@ export const UserContext = React.createContext();
 export const UserStorage = ({ children }) => {
     const navigate = useNavigate();
   
-    async function userLogin(username, password) {
+    function userLogin(username, password) {
      
         // setError(null);
         // setLoading(true);
@@ -15,7 +15,7 @@ export const UserStorage = ({ children }) => {
             navigate("/dashboard");
             // setLoading(false);
         } else {
-            // setError('Usuário inválido!');
+            // setError('Usuário ou senha inválido!');
             // setLogin(false);
         }
     }

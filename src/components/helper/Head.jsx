@@ -1,7 +1,7 @@
 import React from "react";
 
 const Head = (props) => {
-  return <>Teste head</>;
+  return <>{props.title}</>;
 };
 
 export default Head;

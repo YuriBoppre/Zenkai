@@ -1,10 +1,14 @@
 import React from "react";
-import './Dashboard.css';
+import "./Dashboard.css";
+import Head from "../helper/Head"
 
 const Dashboard = () => {
-    return (
-        <>Dashboard</>
-    )
-}
+  return (
+    <section className="container mainContainer">
+      <Head title="Fotos" description="Home do site Zenkai." />
 
-export default Dashboard
+    </section>
+  );
+};
+
+export default Dashboard;
