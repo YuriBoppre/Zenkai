@@ -1,9 +1,11 @@
 import React from "react";
+import "./TicketList.css"
 
 const TicketList = () => {
   return (
-    <section className="">
-    </section>
+    <div className="ticketList">
+        <h3>teste</h3>
+    </div>
   );
 };
 

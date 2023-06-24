@@ -1,9 +1,11 @@
 import React from "react";
+import "./Equipe.css";
 
 const Equipe = () => {
   return (
-    <section className="">
-    </section>
+    <div className="newTeam">
+      Novo membro
+    </div>
   );
 };
 
