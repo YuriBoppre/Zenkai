@@ -12,7 +12,7 @@ export const UserStorage = ({ children }) => {
         // setLoading(true);
         
         if (username == 'Admin' && password == '123'){
-            navigate("/dashboard");
+            navigate("/page");
             // setLoading(false);
         } else {
             // setError('Usuário ou senha inválido!');

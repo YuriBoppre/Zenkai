@@ -1,0 +1,7 @@
+.containerPage{
+    display: flex;
+}
+
+.Other{
+    flex: 4;
+}
