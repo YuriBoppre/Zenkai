@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./EquipeList.css";
 import { DataGrid } from '@mui/x-data-grid'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import { TeamRows } from '../../../../Data'
+import { Link } from "react-router-dom";
 
 const EquipeList = () => {
+    //Pegando as linhas da equipe
+    const [data, setData] = useState(TeamRows)
+
+    //"deletendo" da lista
+    const handleDelete = (id) => {
+        setData(data.filter(item => item.id == id));
+    }
+
+    //montando colunas da tabela
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         {
@@ -19,32 +30,34 @@ const EquipeList = () => {
         { field: 'email', headerName: 'email', width: 200 },
         { field: 'status', headerName: 'status', width: 90 },
         {
-            field: 'action', headerName: 'action', width: 200, randerCell: (params) => {
+            field: 'action', headerName: 'action', width: 200, renderCell: (params) => {
                 return (
-                        <Button className="equipeListEdit">Editar</Button>
+                    <>
+                        <Link to={"/member/" + params.row.id}>
+                            <button className="equipeListEdit">Editar</button>
+                        </Link>
+                        <DeleteOutlineIcon className="equipeListDelete" onClick={() => handleDelete(params.row.id)} />
+                    </>
                 )
             }
         }
     ];
 
-    const rows = [
-        { id: 1, username: 'Snow', avatar: '', email: 'teste@gmail.com', status: 'active' }
-    ];
-
+    //Tabela da equipe
     return (
-        <div className="container">
+        <div className="containerEquipeList">
+            <h1 className='title'>Equipe</h1>
             <DataGrid
-                rows={rows}
+                rows={data}
                 disableRowSelectionOnClick
                 columns={columns}
-                // initialState={{
-                //     pagination: {
-                //         paginationModel: { page: 0, pageSize: 5 },
-                //     },
-                // }}
-                // pageSizeOptions={[5, 10]}
+                initialState={{
+                    pagination: {
+                        paginationModel: { page: 0, pageSize: 5 },
+                    },
+                }}
+                pageSizeOptions={[5, 10]}
                 checkboxSelection
-                // onRowEditStart={}
             />
         </div>
     );

@@ -2,30 +2,24 @@ import React from "react";
 import Sidebar from "../sidebar/Sidebar";
 import "./Page.css";
 import TicketList from "./abas/tickectList/TicketList";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
-  Link,
-} from "react-router-dom";
-import Equipe from "./abas/equipe/Equipe";
+import { Navigate, Route, Routes } from "react-router-dom";
 import EquipeList from "./abas/equipe/EquipeList";
+import { MemberEdit } from "./abas/equipe/memberEdit/memberEdit";
 
 
 const Page = () => {
   return (
-    // <BrowserRouter>
-    <>
-      <div className="container">
-        <Sidebar />
-        <EquipeList />
-        {/* <TicketList /> */}
+    <section className="containerPage">
+      <Sidebar />
+      <div className="containerPageItens">
+        <Routes>
+          <Route path="/" element={<TicketList />} />
+          <Route path="/equipe" element={<EquipeList />} />
+          {/* <Route path="/perdeu" element={<LoginPasswordLost />} /> */}
+          <Route path="/member/:memberId" element={<MemberEdit />} />
+        </Routes>
       </div>
-    </>
-
-    // </BrowserRouter>
-
-
+    </section>
   );
 };
 

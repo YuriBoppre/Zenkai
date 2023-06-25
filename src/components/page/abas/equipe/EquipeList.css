@@ -1,5 +1,6 @@
-.container {
+.containerEquipeList {
     flex: 4;
+    padding: 5px;
 }
 
 .equipeListUser {
