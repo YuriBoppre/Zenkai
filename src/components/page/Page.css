@@ -1,7 +1,3 @@
-.containerPage{
+.container{
     display: flex;
-}
-
-.Other{
-    flex: 4;
 }
