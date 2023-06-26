@@ -4,7 +4,8 @@ import { useNavigate } from "react-router-dom";
 export const UserContext = React.createContext();
 
 export const UserStorage = ({ children }) => {
-    const navigate = useNavigate();
+    const navigate = useNavigate(),
+      [data, setData] = React.useState('');
   
     function userLogin(username, password) {
      
@@ -12,6 +13,7 @@ export const UserStorage = ({ children }) => {
         // setLoading(true);
         
         if (username == 'Admin' && password == '123'){
+            setData(username)
             navigate("/page");
             // setLoading(false);
         } else {
@@ -22,7 +24,7 @@ export const UserStorage = ({ children }) => {
   
     return (
       <UserContext.Provider
-        value={{ userLogin }} //, userLogout, data, error, loading, login 
+        value={{ userLogin, data }} //, userLogout, data, error, loading, login 
       >
         {children}
       </UserContext.Provider>
