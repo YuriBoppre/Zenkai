@@ -6,6 +6,7 @@ import Header from "./Components/Header";
 import Login from "./Components/login/Login";
 import Page from "./components/page/Page";
 import { UserStorage } from "./UserContex";
+import EquipeList from "./components/page/abas/equipe/EquipeList";
 
 const App = () => {
   return (<>

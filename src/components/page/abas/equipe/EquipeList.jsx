@@ -5,6 +5,7 @@ import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { TeamRows } from '../../../../Data'
 import { Link } from "react-router-dom";
 
+
 const EquipeList = () => {
     //Pegando as linhas da equipe
     const [data, setData] = useState(TeamRows)
@@ -18,19 +19,19 @@ const EquipeList = () => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         {
-            field: 'user', headerName: 'user', width: 200, renderCell: (params) => {
+            field: 'user', headerName: 'Usuário', width: 200, renderCell: (params) => {
                 return (
-                    <div className="EquipeListUser">
-                        <img className="EquipeListImg" src={params.row.avatar} alt="" />
+                    <div className="equipeListUser">
+                        <img className="equipeListImg" src={params.row.avatar} alt="" />
                         {params.row.username}
                     </div>
                 )
             }
         },
-        { field: 'email', headerName: 'email', width: 200 },
-        { field: 'status', headerName: 'status', width: 90 },
+        { field: 'email', headerName: 'Email', width: 200 },
+        { field: 'status', headerName: 'Status', width: 90 },
         {
-            field: 'action', headerName: 'action', width: 200, renderCell: (params) => {
+            field: 'action', headerName: '', width: 200, renderCell: (params) => {
                 return (
                     <>
                         <Link to={"/member/" + params.row.id}>

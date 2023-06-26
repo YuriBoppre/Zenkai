@@ -1,16 +1,27 @@
-.member {
+.ticket {
     flex: 4;
     padding: 20px;
 }
 
-.memberTitleContainer{
+.ticketTitleContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.memberAddButton{
+
+
+.ticketStatusPendente{
     width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(162, 165, 2);
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+.ticketStatusEmAndamento{
+    width: 150px;
     border: none;
     padding: 5px;
     background-color: teal;
@@ -19,20 +30,43 @@
     color: white;
     font-size: 16px;
 }
+.ticketStatusConcluido{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(0, 128, 53);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+.ticketStatusEmAnalise{
+    width: 80px;
+    border: none;
+    padding: 5px;
+    background-color: rgb(66, 0, 128);
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
 
-.memberContainer{
+
+
+
+.ticketContainer{
     display: flex;
     margin-top: 20px;
 }
 
-.memberShow{
+.ticketShow{
     flex: 1;
     padding: 20px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
 }
 
-.memberUpdate{
+.ticketUpdate{
     flex: 2;
     padding: 20px;
     margin-left: 20px;
@@ -40,61 +74,67 @@
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
 }
 
-.memberShowTop{
+.ticketShowTop{
     display: flex;
     align-items: center;
 }
 
-.memberShowImg{
+.ticketShowTopMember{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.ticketShowImg{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.memberShowTopTitle{
+.ticketShowTopTitle{
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
-.memberShowUsername{
+.ticketShowUsername{
     font-weight: 600;
 }
 
-.memberShowUserTitle{
+.ticketShowUserTitle{
     font-weight: 300;
 }
 
 
-.memberShowBotton{
+.ticketShowBotton{
     margin-top: 20px;
 }
 
-.memberShowTitle{
+.ticketShowTitle{
     font-size: 14px;
     font-weight: 600;
     color: rgb(175,170,170)
 }
 
-.memberShowInfo{
+.ticketShowInfo{
     display: flex;
     align-items: center;
     margin: 20px 0px;
     color: #4444
 }
 
-.memberShowIcon {
+.ticketShowIcon {
     font-size: 16px !important;
 }
 
-.memberShowInfoTitle{
+.ticketShowInfoTitle{
     margin-left: 10px;
     color: #4444;
 }
 
 
-.memberUpdateImg{
+.ticketUpdateImg{
     width: 200px;
     height: 200px;
     border: 5px;
@@ -102,7 +142,7 @@
 }
 
 
-.memberUpdateButton{
+.ticketUpdateButton{
     width: 80px;
     border-radius: 5px;
     border: none;
