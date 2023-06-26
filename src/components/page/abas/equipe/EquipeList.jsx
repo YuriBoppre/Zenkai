@@ -19,7 +19,7 @@ const EquipeList = () => {
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         {
-            field: 'user', headerName: 'Usuário', width: 200, renderCell: (params) => {
+            field: 'user', headerName: 'Membro', width: 200, renderCell: (params) => {
                 return (
                     <div className="equipeListUser">
                         <img className="equipeListImg" src={params.row.avatar} alt="" />

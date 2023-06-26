@@ -3,7 +3,7 @@ import './LoginPasswordLost.module.css';
 
 const LoginPasswordLost = () => {
     return (
-        <>LoginPasswordLost</>
+        <>Aguarde - Em manutenção</>
     )
 }
 

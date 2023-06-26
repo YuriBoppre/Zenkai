@@ -3,7 +3,7 @@ import './LoginCreate.module.css';
 
 const LoginCreate = () => {
     return (
-        <>LoginCreate</>
+        <>Aguarde - Em manutenção</>
     )
 }
 
