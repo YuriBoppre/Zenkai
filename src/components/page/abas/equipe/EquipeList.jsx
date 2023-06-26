@@ -34,7 +34,7 @@ const EquipeList = () => {
             field: 'action', headerName: '', width: 200, renderCell: (params) => {
                 return (
                     <>
-                        <Link to={"/member/" + params.row.id}>
+                        <Link to={"/page/member/" + params.row.id}>
                             <button className="equipeListEdit">Editar</button>
                         </Link>
                         <DeleteOutlineIcon className="equipeListDelete" onClick={() => handleDelete(params.row.id)} />
