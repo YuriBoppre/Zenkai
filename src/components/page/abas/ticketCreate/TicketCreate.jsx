@@ -1,6 +1,7 @@
 import React from "react";
 import "./TicketCreate.css";
 import Input from "../../../forms/Input";
+import Button from "../../../forms/Button";
 
 const TicketCreate = () => {
   return (
@@ -11,9 +12,13 @@ const TicketCreate = () => {
           <label>Solicitante</label>
           <Input type="text" placeholder='Solicitante' />
         </div>
-        <div className="createTicketItem">
+        <div className="createTicketItem options">
           <label>Status</label>
-          <Input type="text" placeholder='Status' />
+          <select className="createTicketSelect" name="active" id="active">
+            <option value="no">Pendente</option>
+            <option value="yes">Em análise</option>
+            <option value="no">Em andamento</option>
+          </select>
         </div>
         <div className="createTicketItem">
           <label>Data de abertura</label>
@@ -28,14 +33,16 @@ const TicketCreate = () => {
           <Input type="text" placeholder='Descritivo' />
         </div>
 
-        <div className="createTicketItem">
-          <label>Active</label>
+        <div className="createTicketItem options">
+          <label>Ativo</label>
           <select className="createTicketSelect" name="active" id="active">
-            <option value="yes">Yes</option>
-            <option value="no">No</option>
+            <option value="yes">Sim</option>
+            <option value="no">Não</option>
           </select>
         </div>
-        <button className="createTicketButton">Create</button>
+        <div className="createTicketItem">
+          <Button>Criar</Button> 
+        </div>
       </form>
     </div>
   );
