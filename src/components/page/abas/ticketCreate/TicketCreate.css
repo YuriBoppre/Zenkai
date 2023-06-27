@@ -1,0 +1,59 @@
+.createTicket {
+    flex: 4;
+    padding: 5px;
+  }
+  
+  .createTicketForm {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  
+  .createTicketItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .createTicketItem > label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(151, 150, 150);
+  }
+  
+  .createTicketItem > input {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .createTicketGender > input {
+    margin-top: 15px;
+  }
+  
+  .createTicketGender>label{
+      margin: 10px;
+      font-size: 18px;
+      color: #555;
+  }
+  
+  .createTicketSelect{
+      height: 40px;
+      border-radius: 5px;
+  }
+  
+  .createTicketButton{
+      width: 200px;
+      border: none;
+      background-color: darkblue;
+      color: white;
+      padding: 7px 10px;
+      font-weight: 600;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+  }

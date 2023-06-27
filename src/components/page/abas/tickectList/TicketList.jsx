@@ -23,7 +23,7 @@ const TicketList = () => {
           field: 'action', headerName: '', width: 200, renderCell: (params) => {
               return (
                   <>
-                      <Link to={"/ticket/" + params.row.id}>
+                      <Link to={"/page/ticket/" + params.row.id}>
                           <button className="ticketListShow">Visualizar</button>
                       </Link>
                       <DeleteOutlineIcon className="ticketListDelete" onClick={() => handleDelete(params.row.id)} />

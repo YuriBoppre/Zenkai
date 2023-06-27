@@ -16,7 +16,7 @@ const Sidebar = () => {
               <Link to="/page/" className="link">
                 <li className="sidebarListItem">Tickets</li>
               </Link>
-              <Link to="/" className="link">
+              <Link to="/page/ticket/new" className="link">
                 <li className="sidebarListItem">Novo Ticket</li>
               </Link>
               <Link to="/page/equipe" className="link">
