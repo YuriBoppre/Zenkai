@@ -7,6 +7,7 @@ import EquipeList from "./abas/equipe/EquipeList";
 import { MemberEdit } from "./abas/equipe/memberEdit/memberEdit";
 import { Ticket } from "./abas/tickectList/Ticket";
 import TicketCreate from "./abas/ticketCreate/TicketCreate";
+import { Equipe } from "./abas/equipe/Equipe";
 
 const Page = () => {
   return (
@@ -19,6 +20,7 @@ const Page = () => {
           <Route path="/member/:memberId" element={<MemberEdit />} />
           <Route path="/ticket/:ticketId" element={<Ticket />} />
           <Route path="/ticket/new" element={<TicketCreate />} />
+          <Route path="/equipe/new" element={<Equipe />} />
         </Routes>
       </div>
     </section>

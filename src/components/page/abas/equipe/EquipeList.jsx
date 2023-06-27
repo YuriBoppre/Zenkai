@@ -12,7 +12,7 @@ const EquipeList = () => {
 
     //"deletendo" da lista
     const handleDelete = (id) => {
-        setData(data.filter(item => item.id == id));
+        setData(data.filter(item => item.id !== id));
     }
 
     //montando colunas da tabela

@@ -1,0 +1,79 @@
+.createEquipe {
+    flex: 4;
+    padding: 5px;
+  }
+  
+  .createEquipeForm {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+  }
+  
+  .createEquipeItem {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  
+  .createEquipeItem > label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(151, 150, 150);
+  }
+  
+  .createEquipeItem > input {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+  
+  .createEquipeGender > input {
+    margin-top: 15px;
+  }
+  
+  .createEquipeGender>label{
+      margin: 10px;
+      font-size: 18px;
+      color: #555;
+  }
+    
+
+  .titleCamp{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(151, 150, 150);
+  }
+
+  .createEquipeSelect{
+    border: 1px solid #eee;
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    background: #eee;
+    transition: 0.2s;
+    margin-top: 7.9px;
+}
+
+.createEquipeSelect:focus,
+  .createEquipeSelect:hover {
+    outline: none;
+    border-color: #098583;
+    background: white;
+    box-shadow: 0 0 0 3px #78b3b2;
+  }
+
+
+  .createEquipeItemButton {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+  }

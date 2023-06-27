@@ -52,6 +52,7 @@ export const TicketRows = [{
     funcionario: 'teste',
     status: 'Em andamento',
     dataAbertura: '10.01.2023',
+    dataFechamento: '',
     descricao: 'Erro na emisão de NFe',
     descritivo: 'Realizar ajuste no código, referente a emissão da NFe. No DTO de montagem está vindo com campo nulo(dt_emissao).'
 },{
@@ -60,6 +61,7 @@ export const TicketRows = [{
     funcionario: 'teste',
     status: 'Em andamento',
     dataAbertura: '10.01.2023',
+    dataFechamento: '',
     descricao: 'Erro na emisão de NFe',
     descritivo: 'Realizar ajuste no código, referente a emissão da NFe. No DTO de montagem está vindo com campo nulo(dt_emissao).'
 },{
@@ -68,6 +70,7 @@ export const TicketRows = [{
     funcionario: 'teste',
     status: 'Em andamento',
     dataAbertura: '10.01.2023',
+    dataFechamento: '',
     descricao: 'Erro na emisão de NFe',
     descritivo: 'Realizar ajuste no código, referente a emissão da NFe. No DTO de montagem está vindo com campo nulo(dt_emissao).'
 },{
@@ -76,6 +79,7 @@ export const TicketRows = [{
     funcionario: 'teste',
     status: 'Em andamento',
     dataAbertura: '10.01.2023',
+    dataFechamento: '',
     descricao: 'Erro na emisão de NFe',
     descritivo: 'Realizar ajuste no código, referente a emissão da NFe. No DTO de montagem está vindo com campo nulo(dt_emissao).'
 },{
@@ -84,6 +88,7 @@ export const TicketRows = [{
     funcionario: 'teste',
     status: 'Em andamento',
     dataAbertura: '10.01.2023',
+    dataFechamento: '',
     descricao: 'Erro na emisão de NFe',
     descritivo: 'Realizar ajuste no código, referente a emissão da NFe. No DTO de montagem está vindo com campo nulo(dt_emissao).'
 }]

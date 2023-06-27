@@ -9,7 +9,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import FileUploadIcon from '@mui/icons-material/FileUpload';
 import Input from "../../../../forms/Input";
 import Button from "../../../../forms/Button";
-//import styles from "../../../../login/LoginForm.module.css";
 
 
 export const MemberEdit = () => {
@@ -17,7 +16,6 @@ export const MemberEdit = () => {
     <div className='member'>
       <div className="memberTitleContainer">
         <h1 className='title'>Edição de membro</h1>
-        <button className='memberAddButton'>Criar</button>
       </div>
       <div className='memberContainer'>
         <div className='memberShow'>
@@ -53,7 +51,6 @@ export const MemberEdit = () => {
             </div>
           </div>
         </div>
-
 
 
         <div className="memberUpdate">

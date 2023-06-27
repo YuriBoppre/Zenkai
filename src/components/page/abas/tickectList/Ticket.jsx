@@ -23,11 +23,12 @@ export const Ticket = () => {
       <div className="ticketContainer">
         <div className="ticketShow">
           <div className="ticketShowTop">
-            {/* <img src={ticketYuri} alt="ticket" className='ticketShowImg' /> */}
+          <span className="ticketShowTitle">Solicitante:</span>
             <div className="ticketShowTopTitle">
               <span className="ticketShowUsername">Correa Back</span>
             </div>
           </div>
+
           <div className="ticketShowBotton">
             <span className="ticketShowTitle">
               Membro da equipe responsável
@@ -38,26 +39,26 @@ export const Ticket = () => {
                 <span className="ticketShowUsername">Yuri Boppre</span>
               </div>
             </div>
+
             <span className="ticketShowTitle">Detalhes do Ticket</span>
             <div className="ticketShowInfo">
-              <PersonIcon className="ticketShowIcon" />
-              <span className="ticketShowInfoTitle">
-                Membro da equipe responsável
-              </span>
+              <span className='ticketShowInfoSubTitle'>Data de abertura:</span>
+              <CalendarTodayIcon className='ticketShowIconDetails' />
+              <span className='ticketShowInfoTitle'>15.05.2002</span>
+            </div>
+            <div className="ticketShowInfo">
+              <span className='ticketShowInfoSubTitle'>Data de fechamento:</span>
+              <CalendarTodayIcon className='ticketShowIconDetails' />
+              <span className='ticketShowInfoTitle'>-</span>
             </div>
 
-            <span className="ticketShowTitle">Contatos</span>
             <div className="ticketShowInfo">
-              <PhoneAndroidIcon className="ticketShowIcon" />
-              <span className="ticketShowInfoTitle">+55 (48) 99924-5421</span>
+              <span className='ticketShowInfoSubTitle'>Assunto:</span>
+              <span className="ticketShowInfoTitle">Erro na emisão de NFe</span>
             </div>
             <div className="ticketShowInfo">
-              <EmailIcon className="ticketShowIcon" />
-              <span className="ticketShowInfoTitle">yuriboppre@gmail.com</span>
-            </div>
-            <div className="ticketShowInfo">
-              <LocationOnIcon className="ticketShowIcon" />
-              <span className="ticketShowInfoTitle">Criciúma | SC</span>
+              <span className='ticketShowInfoSubTitle'>Descritivo:</span>
+              <span className="ticketShowInfoTitle">Realizar ajuste no código, referente a emissão da NFe. No DTO de montagem está vindo com campo nulo(dt_emissao).</span>
             </div>
           </div>
         </div>
